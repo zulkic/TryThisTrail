@@ -55,11 +55,11 @@ public class MainActivity extends ActionBarActivity {
             }
             @Override
             public void onLocationChanged(Location localizacion) { //obtengo los valores para el GPS
-                miTexto1.setText("Latitud: " + String.valueOf(localizacion.getLatitude()).substring(0,8));
+                miTexto1.setText("Latitud: " + String.valueOf(localizacion.getLatitude()));
                 miTexto2.setText("Longitud: " + String.valueOf(localizacion.getLongitude()).substring(0,8));
                 miTexto3.setText("Altitud: " + String.valueOf(localizacion.getAltitude()).substring(0,8));
                 //Print!!   como se estan imprimiendo String los acote a solo 8 caracteres (incluyen el "-" y el ".")
-                Log.i("Datos de: ", "Latitud;"+String.valueOf(localizacion.getLatitude()).substring(0,8)
+                Log.i("Datos de: ", "Latitud;"+String.valueOf(localizacion.getLatitude())
                         +" Longitud;"+String.valueOf(localizacion.getLongitude()).substring(0,8)
                         +" Altitude;"+String.valueOf(localizacion.getAltitude()).substring(0,8));
             }
